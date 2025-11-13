@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sehat Pink - Edukasi Kesehatan</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- === SEMUA CSS DI SINI (TANPA FILE TERPISAH) === -->
+  <style>
+    /* ===== TEMA PINK PASTEL ===== */
+    :root {
+      --pink: #FF69B4;
+      --soft-pink: #FFC0CB;
+      --light-pink: #FFE4E1;
+      --bg-pink: #FDF2F8;
+      --text-dark: #2c3e50;
+      --shadow: 0 4px 15px rgba(255, 105, 180, 0.15);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-pink);
+      color: var(--text-dark);
+      line-height: 1.8;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: rgba(255, 255, 255, 0.95) !important;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+    .navbar.scrolled {
+      background: rgba(255, 255, 255, 0.98) !important;
+      box-shadow: var(--shadow);
+    }
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.6rem;
+      color: var(--pink) !important;
+    }
+    .nav-link {
+      font-weight: 500;
+      color: var(--text-dark) !important;
+      transition: color 0.3s;
+    }
+    .nav-link:hover {
+      color: var(--pink) !important;
+    }
+
+    /* Background */
+    .bg-gradient-pink {
+      background: linear-gradient(135deg, #FF69B4, #FF1493);
+    }
+    .bg-light-pink { background-color: var(--light-pink); }
+    .bg-soft-pink { background-color: var(--soft-pink); }
+    .bg-pink { background-color: var(--pink); }
+
+    .text-pink { color: var(--pink); }
+
+    /* Tombol */
+    .btn-pink {
+      background: var(--pink);
+      color: white;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      padding: 12px 32px;
+      transition: all 0.3s ease;
+    }
+    .btn-pink:hover {
+      background: #FF1493;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
+    }
+
+    /* Gambar Card */
+    .image-card {
+      transition: transform 0.3s ease;
+      border-radius: 1rem;
+    }
+    .image-card:hover {
+      transform: translateY(-10px);
+    }
+    .image-card img {
+      border-radius: 0.75rem;
+      object-fit: cover;
+    }
+
+    /* Section */
+    section {
+      padding: 100px 0;
+    }
+    .min-vh-100 {
+      min-height: 100vh;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .display-3 {
+        font-size: 2.8rem;
+      }
+      section {
+        padding: 70px 0;
+      }
+      .btn-pink {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">Sehat Pink</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto gap-3">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nutrition">Nutrisi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#activity">Olahraga</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mental">Mental</a></li>
+          <li class="nav-item"><a class="nav-link" href="#prevention">Pencegahan</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SECTION 1: HOME -->
+  <section id="home" class="min-vh-100 d-flex align-items-center bg-gradient-pink">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-8 mx-auto">
+          <h1 class="display-3 fw-bold text-white mb-4">Hidup Sehat dengan Cinta</h1>
+          <p class="lead text-white mb-5 opacity-90">
+            Website edukasi kesehatan khusus untukmu. Pelajari cara menjaga tubuh & pikiran dengan cinta.
+          </p>
+          <a href="#nutrition" class="btn btn-pink btn-lg px-5 shadow-lg">Mulai Sekarang</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: NUTRISI -->
+  <section id="nutrition" class="py-5 bg-light-pink">
+    <div class="container py-5">
+      <h2 class="text-center fw-bold text-pink mb-5">Nutrisi Seimbang</h2>
+      <div class="row align-items-center g-5">
+        <div class="col-md-6">
+          <div class="image-card bg-white p-3 rounded-4 shadow-sm">
+            <img src="gizi.JPG" style="width: 500px;" 
+                 alt="Nutrisi" class="img-fluid rounded-3">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p class="fs-5 text-dark lh-lg">
+            Makanan sehat = cinta untuk tubuhmu. Konsumsi <strong>5 porsi buah & sayur</strong> setiap hari.
+          </p>
+          <ul class="list-unstyled fs-5">
+            <li class="mb-3"><span class="text-pink fw-bold">Check</span> Nasi merah, oatmeal</li>
+            <li class="mb-3"><span class="text-pink fw-bold">Check</span> Protein: tahu, tempe, ikan</li>
+            <li class="mb-3"><span class="text-pink fw-bold">Check</span> Minum air 8 gelas/hari</li>
+            <li class="mb-3"><span class="text-pink fw-bold">Check</span> Hindari gorengan & manis berlebih</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: OLAHRAGA -->
+  <section id="activity" class="py-5 bg-soft-pink">
+    <div class="container py-5">
+      <h2 class="text-center fw-bold text-pink mb-5">Aktivitas Fisik</h2>
+      <div class="row align-items-center g-5">
+        <div class="col-md-6 order-md-2">
+          <div class="image-card bg-white p-3 rounded-4 shadow-sm">
+            <img src="aktivitas fisik.jpg" style="width: 500px;"
+                 alt="Olahraga" class="img-fluid rounded-3">
+          </div>
+        </div>
+        <div class="col-md-6 order-md-1">
+          <p class="fs-5 lh-lg">
+            Gerakkan tubuhmu dengan cinta. Lakukan <strong>30 menit olahraga</strong> setiap hari.
+          </p>
+          <ul class="list-unstyled fs-5">
+            <li class="mb-3">Jalan kaki pagi</li>
+            <li class="mb-3">Senam aerobik</li>
+            <li class="mb-3">Yoga atau pilates</li>
+            <li class="mb-3">Lompat tali 10 menit</li>
+          </ul>
+          <p class="fst-italic mt-4 text-pink">Setiap gerakan adalah self-love!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: KESEHATAN MENTAL -->
+  <section id="mental" class="py-5 bg-light-pink">
+    <div class="container py-5">
+      <h2 class="text-center fw-bold text-pink mb-5">Kesehatan Mental</h2>
+      <div class="row align-items-center g-5">
+        <div class="col-md-6">
+          <div class="image-card bg-white p-3 rounded-4 shadow-sm">
+            <img src="kesehatan mental.jpeg" style="width: 500px;"
+                 alt="Mental" class="img-fluid rounded-3">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p class="fs-5 lh-lg">
+            Jaga pikiranmu seperti menjaga hati.
+          </p>
+          <ul class="list-unstyled fs-5">
+            <li class="mb-3"><span class="text-pink fw-bold">Heart</span> Tidur 7–8 jam</li>
+            <li class="mb-3"><span class="text-pink fw-bold">Heart</span> Meditasi 5 menit</li>
+            <li class="mb-3"><span class="text-pink fw-bold">Heart</span> Tulis jurnal harian</li>
+            <li class="mb-3"><span class="text-pink fw-bold">Heart</span> Bicara dengan orang terdekat</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: PENCEGAHAN -->
+  <section id="prevention" class="py-5 bg-soft-pink">
+    <div class="container py-5">
+      <h2 class="text-center fw-bold text-pink mb-5">Pencegahan Penyakit</h2>
+      <div class="row align-items-center g-5">
+        <div class="col-md-6 order-md-2">
+          <div class="image-card bg-white p-3 rounded-4 shadow-sm">
+            <img src="mencegah penyakit.jpg" style="width: 500px;"
+                 alt="Pencegahan" class="img-fluid rounded-3">
+          </div>
+        </div>
+        <div class="col-md-6 order-md-1">
+          <p class="fs-5 lh-lg">
+            Cinta pada diri sendiri dimulai dari pencegahan.
+          </p>
+          <ul class="list-unstyled fs-5">
+            <li class="mb-3"><span class="text-pink fw-bold">Check</span> Vaksinasi lengkap</li>
+            <li class="mb-3"><span class="text-pink fw-bold">Check</span> Cuci tangan rutin</li>
+            <li class="mb-3"><span class="text-pink fw-bold">Check</span> Cek kesehatan tiap 6 bulan</li>
+            <li class="mb-3"><span class="text-pink fw-bold">Check</span> Hindari rokok & alkohol</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-pink text-white py-5">
+    <div class="container text-center">
+      <p class="mb-1 fw-semibold">© 2025 Sehat Pink. Dibuat dengan <span class="text-white">Heart</span> untukmu.</p>
+      <p class="small mb-0">Sumber: WHO, Kemenkes RI, dan ahli kesehatan.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Smooth Scroll + Navbar Effect -->
+  <script>
+    // Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Navbar shadow saat scroll
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
