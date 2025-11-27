@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Makeup untuk Pemula</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS for Pink Pastel Theme -->
+    <style>
+        :root {
+            --pink-pastel: #FFD1DC;
+            --light-pink: #FFE4E1;
+            --dark-pink: #FFC0CB;
+            --text-color: #333333;
+        }
+        body {
+            background-color: var(--light-pink);
+            color: var(--text-color);
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: var(--pink-pastel);
+        }
+        .navbar-brand, .nav-link {
+            color: var(--text-color) !important;
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: var(--dark-pink) !important;
+        }
+        .card {
+            background-color: #FFFFFF;
+            border: 1px solid var(--pink-pastel);
+        }
+        .btn-primary {
+            background-color: var(--dark-pink);
+            border-color: var(--dark-pink);
+        }
+        .btn-primary:hover {
+            background-color: var(--pink-pastel);
+            border-color: var(--pink-pastel);
+        }
+        .hero {
+            background-color: var(--pink-pastel);
+            padding: 50px 0;
+            text-align: center;
+        }
+        .section-title {
+            color: var(--dark-pink);
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Panduan Make-up</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#steps">Urutan Make-up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#techniques">Teknik Make-up</a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="display-4">Panduan Lengkap Ber-Makeup Untuk Pemula</h1>
+            <p class="lead">Pelajari teknik dasar makeup dengan urutan yang benar, dilengkapi foto!</p>
+            <a href="#steps" class="btn btn-primary btn-lg">Mulai Belajar</a>
+        </div>
+    </section>
+
+    <!-- Urutan Makeup Section -->
+    <section id="steps" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Urutan Langkah Makeup Dasar</h2>
+            <p class="text-center mb-4">Ikuti urutan ini untuk hasil makeup yang flawless. Mulai dari persiapan kulit hingga finishing touch.</p>
+            <div class="accordion" id="accordionSteps">
+                <!-- Step 1: Skincare Prep -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                            1. Persiapan Kulit (Skincare)
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1">
+                        <div class="accordion-body">
+                            Bersihkan wajah, gunakan toner, serum, dan moisturizer. Ini penting untuk base yang halus.
+                            <img src="skincare.jpg" class="img-fluid mt-3" alt="Persiapan Kulit" width="300px">
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 2: Primer -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            2. Primer
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2">
+                        <div class="accordion-body">
+                            Aplikasikan primer untuk membuat makeup lebih tahan lama dan kulit lebih halus.
+                            <img src="primer.png" class="img-fluid mt-3" alt="Primer" width="300px">
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 3: Foundation -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                            3. Foundation
+                        </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3">
+                        <div class="accordion-body">
+                            Ratakan foundation dengan sponge atau brush untuk coverage yang merata.
+                            <img src="foundation.png" class="img-fluid mt-3" alt="Foundation" width="300px"><grok-card data-id="2084a8" data-type="citation_card" ></grok-card>
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 4: Concealer -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                            4. Concealer
+                        </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4">
+                        <div class="accordion-body">
+                            Tutupi noda atau dark circles dengan concealer, blend dengan baik.
+                            <img src="concealer.png" class="img-fluid mt-3" alt="Concealer" width="300px"><grok-card data-id="bf3310" data-type="citation_card"></grok-card>
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 5: Powder -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                            5. Powder
+                        </button>
+                    </h2>
+                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5">
+                        <div class="accordion-body">
+                            Set foundation dengan loose powder untuk matte finish.
+                            <img src="powder.png" alt="" width="300px">
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 6: Eyebrows -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading6">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                            6. Alis (Eyebrows)
+                        </button>
+                    </h2>
+                    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6">
+                        <div class="accordion-body">
+                            Gambar alis dengan pencil atau pomade untuk bentuk natural.
+                            <img src="eyesbrown.jpg" alt="" width="300px">
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 7: Eyeshadow -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading7">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                            7. Eyeshadow
+                        </button>
+                    </h2>
+                    <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7">
+                        <div class="accordion-body">
+                            Aplikasikan warna netral untuk base, tambah shimmer jika ingin.
+                            <img src="eyeshadow.png" class="img-fluid mt-3" alt="Eyeshadow"><grok-card data-id="8de11f" data-type="citation_card"></grok-card>
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 8: Eyeliner -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading8">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                            8. Eyeliner
+                        </button>
+                    </h2>
+                    <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8">
+                        <div class="accordion-body">
+                            Gambar garis tipis di kelopak mata atas.
+                            <img src="eyeliner.jpg" alt="" width="300px">
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 9: Mascara -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading9">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                            9. Mascara
+                        </button>
+                    </h2>
+                    <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9">
+                        <div class="accordion-body">
+                            Panjangkan bulu mata dengan mascara.
+                            <img src="mascara.png" alt="" width="300px">
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 10: Blush -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading10">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                            10. Blush
+                        </button>
+                    </h2>
+                    <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10">
+                        <div class="accordion-body">
+                            Tambahkan warna pink di pipi untuk fresh look.
+                            <img src="blush.jpg" alt="" width="300px">
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 11: Highlighter -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading11">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                            11. Highlighter
+                        </button>
+                    </h2>
+                    <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11">
+                        <div class="accordion-body">
+                            Berikan glow di tulang pipi dan hidung.
+                            <img src="highlighter.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 12: Lips -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading12">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                            12. Bibir (Lips)
+                        </button>
+                    </h2>
+                    <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12">
+                        <div class="accordion-body">
+                            Gunakan lip liner lalu lipstick atau gloss.
+                            <img src="lips.jpg" alt="" width="300px">
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 13: Setting Spray -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading13">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                            13. Setting Spray
+                        </button>
+                    </h2>
+                    <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13">
+                        <div class="accordion-body">
+                            Semprotkan untuk lock makeup seharian.
+                            <img src="setting spray.jpg" alt="" width="300px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teknik Makeup Section -->
+    <section id="techniques" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Teknik Makeup Lanjutan</h2>
+            <p class="text-center mb-4">Pelajari teknik-teknik khusus untuk hasil yang lebih profesional.</p>
+            <div class="row">
+                <!-- Teknik 1: Contouring -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="contouring.jpg" class="card-img-top" alt="Contouring" width="300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Contouring</h5>
+                            <p class="card-text">Gunakan shade gelap untuk membentuk wajah, seperti di bawah tulang pipi. Blend dengan baik untuk natural look.<grok-card data-id="ec0192" data-type="citation_card"></grok-card></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Teknik 2: Baking -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="baking.jpg" class="card-img-top" alt="Baking" width="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Baking</h5>
+                            <p class="card-text">Aplikasikan loose powder tebal di bawah mata, diamkan 5-10 menit, lalu sapu untuk set concealer tanpa creasing.<grok-card data-id="c29df5" data-type="citation_card"></grok-card></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Teknik 3: Cut Crease -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="cut eyeshadow.jpg" class="card-img-top" alt="Cut Crease" width="300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Cut Crease Eyeshadow</h5>
+                            <p class="card-text">Buat garis tajam di crease mata dengan concealer, lalu aplikasikan eyeshadow di atasnya untuk dramatic eyes.<grok-card data-id="dad93b" data-type="citation_card"></grok-card></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tambahkan lebih banyak teknik jika diperlukan -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="winged.jpg" class="card-img-top" alt="Winged Eyeliner" width="300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Winged Eyeliner</h5>
+                            <p class="card-text">Gambar wing dengan tape sebagai panduan untuk simetri.<grok-card data-id="552209" data-type="citation_card"></grok-card></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="overlining.jpeg" class="card-img-top" alt="Overlining Lips" width="300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Overlining Lips</h5>
+                            <p class="card-text">Gambar di luar garis bibir alami untuk tampilan lebih penuh.<grok-card data-id="4a3b7d" data-type="citation_card"></grok-card></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="dewy skin finish.jpg" class="card-img-top" alt="Dewy Skin" width="300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Dewy Skin Finish</h5>
+                            <p class="card-text">Campur highlighter dengan foundation untuk glowy base.<grok-card data-id="b5c739" data-type="citation_card"></grok-card></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+               
+                    
+                       
+    <!-- Footer -->
+    <footer class="bg-pink-pastel py-3 text-center">
+        <p>&copy; 2025 Panduan Makeup. Dibuat oleh nazwa bilbina puteri bantuan AI.</p>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
